@@ -26,10 +26,10 @@
     <h3>Tabel Mahasiswa</h3>
 
     <!-- Create new data -->
-    <button class="btn btn-success mt-3 mb-2">
-        <a>Tambah data</a>
+    <a href="./pages/new.php" class="btn btn-success mt-3 mb-2">
+        Tambah data
         <i class="fa fa-plus"></i>
-    </button>
+    </a>
 
     <table class="table table-borderless">
         <thead>
