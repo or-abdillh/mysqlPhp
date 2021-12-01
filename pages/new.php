@@ -24,7 +24,7 @@
 
     <!-- Table -->
     <h3>Tambah Data Mahasiswa Baru</h3>
-    <form method="post">
+    <form method="post" action="../helper/new.php">
         <div class="mb-3">
             <label for="nama" class="form-label">Nama</label>
             <input required type="text" name="nama" class="form-control" id="nama">
@@ -48,7 +48,6 @@
             <option value="Pria">Pria</option>
             <option value="Wanita">Wanita</option>
         </select>
-        <input type="hidden" value="$key" name="key" />
         <button type="submit" class="btn btn-primary">Add</button>
         <a href="../" class="btn btn-secondary">Back</button>
     </form>

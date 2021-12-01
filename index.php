@@ -1,6 +1,6 @@
 <?php
 
-    include("./helper/connection.php");
+include("./helper/connection.php");
 
 ?>
 
@@ -74,7 +74,7 @@
                             <a class="btn btn-danger w-full mb-2"><i class="far fa-trash-alt"></i></a>
                         </td>
                     <tr/>
-                    EOT;
+EOT;
                 }
             } else echo "Empty";
 

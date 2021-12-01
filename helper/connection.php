@@ -12,9 +12,7 @@ $conn = mysqli_connect($servername, $username, $password, $db);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 } 
-else echo <<<EOT
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Connected!</strong> Success to connected MySQL.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-EOT;
+else echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+<strong>Connected!</strong> Success to connected MySQL.
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';

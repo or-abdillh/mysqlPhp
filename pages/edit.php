@@ -76,7 +76,7 @@
                 <input type="hidden" value="$key" name="key" />
                 <button type="submit" class="btn btn-primary">Update</button>
                 <a href="../" class="btn btn-secondary">Back</button>
-                EOT;
+EOT;
             }
         }
     ?>
