@@ -16,5 +16,5 @@ if ( isset($_POST) ){
     
     $res = mysqli_query($conn, $sql);
 
-    header("Location: ../index.php");
+    header("Location: ../index.php?success=true&action=new");
 }

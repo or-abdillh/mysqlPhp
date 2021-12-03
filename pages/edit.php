@@ -47,7 +47,7 @@
                 $nama = $row["nama"];
                 $jurusan = $row["jurusan"];
                 $alamat = $row["alamat"];
-
+                $gender = $row["jenis_kelamin"];
 
                 echo <<<EOT
                 <div class="mb-3">
@@ -62,28 +62,50 @@
                     <label for="alamat" class="form-label">Alamat</label>
                     <input required type="text" value="$alamat" name="alamat" class="form-control" id="alamat">
                 </div>
-                <select required name="jurusan" class="form-select mb-3" aria-label="Default select example">
-                    <option>Jurusan</option>
-                    <option value="Teknik Informatika">Teknik Informatika</option>
-                    <option value="Teknik Otomotif">Teknik Otomotif</option>
-                    <option value="Budidaya Tanaman Perkebunan">Budidaya Tanaman Perkebunan</option>
-                </select>
-                <select required name="gender" class="form-select mb-3" aria-label="Default select example">
-                    <option selected>Jenis Kelamin</option>
-                    <option value="Pria">Pria</option>
-                    <option value="Wanita">Wanita</option>
-                </select>
+                <div class="mb-3">
+                    <label for="alamat">
+                        Jurusan
+                    </label>
+                    <select required name="jurusan" class="form-select" aria-label="Default select example">
+                        <option>Jurusan</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Otomotif">Teknik Otomotif</option>
+                        <option value="Budidaya Tanaman Perkebunan">Budidaya Tanaman Perkebunan</option>
+                    </select>
+                </div>
+                <div class="mb-3 d-flex">
+                    <label class="me-3" for="gender">
+                        Jenis kelamin
+                    </label>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="radio" name="gender" value="Pria">
+                        <label class="form-check-label">
+                            Pria
+                        </label>
+                    </div>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="radio" name="gender" value="Wanita">
+                        <label class="form-check-label">
+                            Wanita
+                        </label>
+                    </div>
+                </div>
+                <input type="hidden" value="$gender" name="genderUser" />
                 <input type="hidden" value="$key" name="key" />
+                <input type="hidden" value="$jurusan" name="jurusanGender" />
                 <button type="submit" class="btn btn-primary">Update</button>
                 <a href="../" class="btn btn-secondary">Back</button>
 EOT;
             }
         }
-    ?>
+    ?> 
     </form>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="../JS/select.js"></script>
+    <script src="../JS/option.js"></script>
 
 </body>
 </html>

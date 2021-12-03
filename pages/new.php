@@ -43,11 +43,18 @@
             <option value="Teknik Otomotif">Teknik Otomotif</option>
             <option value="Budidaya Tanaman Perkebunan">Budidaya Tanaman Perkebunan</option>
         </select>
-        <select required name="gender" class="form-select mb-3" aria-label="Default select example">
-            <option selected>Jenis Kelamin</option>
-            <option value="Pria">Pria</option>
-            <option value="Wanita">Wanita</option>
-        </select>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" value="Pria">
+            <label class="form-check-label">
+                Pria
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="gender" value="Wanita">
+            <label class="form-check-label">
+                Wanita
+            </label>
+        </div>
         <button type="submit" class="btn btn-primary">Add</button>
         <a href="../" class="btn btn-secondary">Back</button>
     </form>

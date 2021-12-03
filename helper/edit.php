@@ -15,5 +15,5 @@ if ( isset($_POST) ){
     $sql = "UPDATE `mahasiswa` SET `nim`='$nim', `nama`='$nama',`jenis_kelamin`='$gender',`jurusan`='$jurusan',`alamat`='$alamat' WHERE `id_mhs` = '$key'";
     mysqli_query($conn, $sql);
     
-    header('Location: ../index.php');
+    header('Location: ../index.php?success=true&action=edit');
 }
